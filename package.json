@@ -9,15 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.4.4",
     "@mui/lab": "^5.0.0-alpha.71",
     "@mui/material": "^5.4.4",
     "@mui/x-data-grid": "^5.5.1",
-    "react-router-dom": "6"
+    "mui-image-slider": "^1.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "6",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

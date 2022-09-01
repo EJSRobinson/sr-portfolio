@@ -23,6 +23,7 @@ import ApartmentIcon from '@mui/icons-material/Apartment';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import ArticleIcon from '@mui/icons-material/Article';
 import ArcProject from './ArcProject';
+import MinePerspectives from './pages/mine-perspectives';
 
 const drawerWidth = 240;
 
@@ -280,7 +281,7 @@ export default function Menu() {
       <Box component='main' sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
         {pageName === 'About' && <>ABOUT PAGE</>}
-        {pageName === 'The Mine/perspectives' && <>Lalalala</>}
+        {pageName === 'The Mine/perspectives' && <MinePerspectives />}
       </Box>
     </Box>
   );
