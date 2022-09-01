@@ -22,6 +22,7 @@ import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import ArticleIcon from '@mui/icons-material/Article';
+import ArcProject from './ArcProject';
 
 const drawerWidth = 240;
 
@@ -201,29 +202,28 @@ export default function Menu() {
             </ListItemButton>
             <Collapse in={arcProjectsOpen} timeout='auto' unmountOnExit>
               <List disablePadding>
-                <ListItem sx={{ pl: 4 }}>
-                  <ListItemButton
-                    sx={{
-                      minHeight: 48,
-                      justifyContent: open ? 'initial' : 'center',
-                      px: 2.5,
-                    }}
-                    onClick={() => {
-                      setPageName('project1');
-                    }}
-                  >
-                    <ListItemIcon
-                      sx={{
-                        minWidth: 0,
-                        mr: open ? 3 : 'auto',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      <QuestionMarkIcon />
-                    </ListItemIcon>
-                    <ListItemText primary={'project1'} sx={{ opacity: open ? 1 : 0 }} />
-                  </ListItemButton>
-                </ListItem>
+                <ArcProject
+                  name={'The Mine'}
+                  mainMenuOpen={open}
+                  setPage={setPageName}
+                  enableCad={true}
+                  enableConcepting={true}
+                  enableOrthographics={true}
+                  enableModel={true}
+                  enablePrespectives={true}
+                  iconType={'default'}
+                />
+                <ArcProject
+                  name={'Test Project 2'}
+                  mainMenuOpen={open}
+                  setPage={setPageName}
+                  enableCad={true}
+                  enableConcepting={true}
+                  enableOrthographics={true}
+                  enableModel={true}
+                  enablePrespectives={true}
+                  iconType={'default'}
+                />
               </List>
             </Collapse>
           </ListItem>
@@ -261,29 +261,17 @@ export default function Menu() {
             </ListItemButton>
             <Collapse in={addProjectsOpen} timeout='auto' unmountOnExit>
               <List disablePadding>
-                <ListItem sx={{ pl: 4 }}>
-                  <ListItemButton
-                    sx={{
-                      minHeight: 48,
-                      justifyContent: open ? 'initial' : 'center',
-                      px: 2.5,
-                    }}
-                    onClick={() => {
-                      setPageName('project1');
-                    }}
-                  >
-                    <ListItemIcon
-                      sx={{
-                        minWidth: 0,
-                        mr: open ? 3 : 'auto',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      <QuestionMarkIcon />
-                    </ListItemIcon>
-                    <ListItemText primary={'project1'} sx={{ opacity: open ? 1 : 0 }} />
-                  </ListItemButton>
-                </ListItem>
+                <ArcProject
+                  name={'Test Project 3'}
+                  mainMenuOpen={open}
+                  setPage={setPageName}
+                  enableCad={true}
+                  enableConcepting={true}
+                  enableOrthographics={true}
+                  enableModel={true}
+                  enablePrespectives={true}
+                  iconType={'default'}
+                />
               </List>
             </Collapse>
           </ListItem>
@@ -292,6 +280,7 @@ export default function Menu() {
       <Box component='main' sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
         {pageName === 'About' && <>ABOUT PAGE</>}
+        {pageName === 'The Mine/perspectives' && <>Lalalala</>}
       </Box>
     </Box>
   );
