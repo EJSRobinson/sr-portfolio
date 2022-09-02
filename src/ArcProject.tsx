@@ -23,7 +23,6 @@ import ApartmentIcon from '@mui/icons-material/Apartment';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import ArticleIcon from '@mui/icons-material/Article';
 import NaturePeopleIcon from '@mui/icons-material/NaturePeople';
-import testIcon from './files/person-icon.png';
 
 type projectProps = {
   name: string;
@@ -81,8 +80,6 @@ export default function ArcProject(props: projectProps) {
           >
             {(() => {
               switch (iconType) {
-                case 'test':
-                  return <img width={'10%'} src={`${testIcon}`} />;
                 case 'mine':
                   return <NaturePeopleIcon />;
                 default:

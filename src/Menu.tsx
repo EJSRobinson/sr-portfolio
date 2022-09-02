@@ -28,6 +28,7 @@ import MineOrthographics from './pages/mine-orthographics';
 import CadViewer from './cad-viewer';
 import CadViewer2 from './cad-viewer';
 import MineCad from './pages/mine-cad';
+import MineConcepts from './pages/mine-concepts';
 
 const drawerWidth = 240;
 
@@ -288,6 +289,7 @@ export default function Menu() {
         {pageName === 'The Mine/perspectives' && <MinePerspectives />}
         {pageName === 'The Mine/orthographics' && <MineOrthographics />}
         {pageName === 'The Mine/cad' && <MineCad />}
+        {pageName === 'The Mine/concepting' && <MineConcepts />}
       </Box>
     </Box>
   );
