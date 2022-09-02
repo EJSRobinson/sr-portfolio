@@ -15,13 +15,26 @@ type cadProps = {
   path: string;
   hOffset: number;
   vOffset: number;
+  title: string;
 };
 
 export default function CadViewer(props: cadProps) {
-  const { path, hOffset, vOffset } = props;
+  const { path, hOffset, vOffset, title } = props;
   return (
-    <Box sx={{ ml: hOffset, mt: vOffset }}>
-      <StlViewer style={style} orbitControls shadows url={path} />
-    </Box>
+    <>
+      <Box sx={{ ml: hOffset }}>
+        <h4>{title}</h4>
+      </Box>
+      <Box sx={{ ml: hOffset, mt: vOffset }}>
+        <StlViewer
+          style={style}
+          showAxes
+          orbitControls
+          shadows
+          url={path}
+          modelProps={{ scale: 0.2 }}
+        />
+      </Box>
+    </>
   );
 }

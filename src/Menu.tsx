@@ -216,7 +216,7 @@ export default function Menu() {
                   enableOrthographics={true}
                   enableModel={true}
                   enablePrespectives={true}
-                  iconType={'default'}
+                  iconType={'mine'}
                 />
                 <ArcProject
                   name={'Test Project 2'}
