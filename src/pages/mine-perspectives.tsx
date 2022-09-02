@@ -8,12 +8,12 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
-import exterior from '../images/mine/exterior.jpg';
-import allotment from '../images/mine/allotment.jpg';
-import augmented from '../images/mine/augmented.jpg';
-import cafe from '../images/mine/cafe.jpg';
-import market from '../images/mine/market.jpg';
-import tunnel from '../images/mine/tunnel.jpg';
+import exterior from '../files/mine/exterior.jpg';
+import allotment from '../files/mine/allotment.jpg';
+import augmented from '../files/mine/augmented.jpg';
+import cafe from '../files/mine/cafe.jpg';
+import market from '../files/mine/market.jpg';
+import tunnel from '../files/mine/tunnel.jpg';
 import SlideShow from '../slide-show';
 
 const itemData = [

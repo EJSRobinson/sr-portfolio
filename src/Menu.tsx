@@ -24,6 +24,7 @@ import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import ArticleIcon from '@mui/icons-material/Article';
 import ArcProject from './ArcProject';
 import MinePerspectives from './pages/mine-perspectives';
+import MineOrthographics from './pages/mine-orthographics';
 
 const drawerWidth = 240;
 
@@ -282,6 +283,7 @@ export default function Menu() {
         <DrawerHeader />
         {pageName === 'About' && <>ABOUT PAGE</>}
         {pageName === 'The Mine/perspectives' && <MinePerspectives />}
+        {pageName === 'The Mine/orthographics' && <MineOrthographics />}
       </Box>
     </Box>
   );
