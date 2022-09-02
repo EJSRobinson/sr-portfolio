@@ -25,6 +25,9 @@ import ArticleIcon from '@mui/icons-material/Article';
 import ArcProject from './ArcProject';
 import MinePerspectives from './pages/mine-perspectives';
 import MineOrthographics from './pages/mine-orthographics';
+import CadViewer from './cad-viewer';
+import CadViewer2 from './cad-viewer';
+import MineCad from './pages/mine-cad';
 
 const drawerWidth = 240;
 
@@ -284,6 +287,7 @@ export default function Menu() {
         {pageName === 'About' && <>ABOUT PAGE</>}
         {pageName === 'The Mine/perspectives' && <MinePerspectives />}
         {pageName === 'The Mine/orthographics' && <MineOrthographics />}
+        {pageName === 'The Mine/cad' && <MineCad />}
       </Box>
     </Box>
   );
